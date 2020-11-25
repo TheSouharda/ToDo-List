@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(234, 95, 142);
+    background: linear-gradient(115deg, rgba(234, 95, 142, 1) 28%, rgba(226, 91, 136, 1) 82%);
+    font-family: "Open Sans";
+    height: 100vh;
+}
+
+header {
+
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    width: 600px;
+    background-color: #3D434B;
+    color: #DCE0E3;
+}
+
+.head {
+    padding: 1.5em;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.01px solid black;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.day {
+    font-size: 2em;
+    margin-top: 1.3em;
+}
+
+.date {
+    margin-top: -1.7em;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+input[type=text],
+input[type=text]:focus {
+    color: #fff;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    width: 30em;
+    max-width: 40em;
+    height: 3em;
+    border-radius: 5px;
+    padding: 1.1em;
+    font-size: 1em;
+
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+ul {
+    list-style: none;
+
+    /* width: 100%; */
+    width: 93%;
+
+
+
+}
+
+.list li {
+
+    width: 92%;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2.5em;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5px;
+    border-radius: 5px;
+
+}
+
+.add-text {
+    text-align: center;
+    margin: 2em;
+}
+
+.add-label-text {
+    font-size: 1.5em;
+}
+
+.add-todo-form {
+    margin-top: 1em;
+
+}
+
+i {
+    cursor: pointer;
+}
+
+
+.filtered {
+    display: none !important;
+}
